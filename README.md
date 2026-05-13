@@ -1,8 +1,78 @@
-# pytest cache directory #
+# Appium Android Python Demo
 
-This directory contains data from the pytest's cache plugin,
-which provides the `--lf` and `--ff` options, as well as the `cache` fixture.
+Mobile automation testing project using Python, Pytest, Appium, and Android Emulator.
 
-**Do not** commit this to version control.
+## Tech Stack
 
-See [the docs](https://docs.pytest.org/en/stable/how-to/cache.html) for more information.
+- Python
+- Pytest
+- Appium
+- Android Emulator
+- UiAutomator2
+- Appium Inspector
+
+## Project Overview
+
+This project automates Android Settings application testing using Appium and Python.
+
+Automated test coverage includes:
+- Verifying Settings app launches successfully
+- Verifying Apps option is visible
+
+## Project Structure
+
+```text
+appium-android-python-demo/
+├── test_settings_app.py
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+## Setup Instructions
+
+### Clone Repository
+
+```bash
+git clone https://github.com/JonathanQA809/appium-android-python-demo.git
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Start Android Emulator
+
+```bash
+adb devices
+```
+
+### Start Appium Server
+
+```bash
+appium
+```
+
+### Run Tests
+
+```bash
+pytest -v
+```
+
+## Test Results
+
+```text
+2 passed
+```
+
+## Skills Demonstrated
+
+- Mobile Automation Testing
+- Android Emulator Configuration
+- Appium Setup
+- Python Test Automation
+- Pytest Framework
+- Element Inspection with Appium Inspector
+- Android Device Connection using adb
